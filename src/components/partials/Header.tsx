@@ -39,11 +39,13 @@ const Header = () => {
             className="drop-shadow-2xl hover:scale-110 ease-in-out duration-100"
           />
         </a>
-        <BiHistory
-          size={35}
-          color="white"
-          className="drop-shadow-2xl hover:scale-110 ease-in-out duration-100 cursor-pointer"
-        />
+        <a href="history">
+          <BiHistory
+            size={35}
+            color="white"
+            className="drop-shadow-2xl hover:scale-110 ease-in-out duration-100 cursor-pointer"
+          />
+        </a>
       </div>
     </header>
   );
