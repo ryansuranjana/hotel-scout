@@ -1,7 +1,8 @@
 "use client";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { BiSolidHome , BiLogoGithub } from "react-icons/bi";
+import { BiSolidHome, BiLogoGithub } from "react-icons/bi";
 
 const HeaderHistory = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,13 +40,13 @@ const HeaderHistory = () => {
             className="drop-shadow-2xl hover:scale-110 ease-in-out duration-100"
           />
         </a>
-        <a href="/">
-          <BiSolidHome 
+        <Link href="/">
+          <BiSolidHome
             size={35}
             color="white"
             className="drop-shadow-2xl hover:scale-110 ease-in-out duration-100 cursor-pointer"
           />
-        </a>
+        </Link>
       </div>
     </header>
   );

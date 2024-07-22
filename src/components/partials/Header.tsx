@@ -1,5 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { BiHistory, BiLogoGithub } from "react-icons/bi";
 
@@ -39,13 +40,13 @@ const Header = () => {
             className="drop-shadow-2xl hover:scale-110 ease-in-out duration-100"
           />
         </a>
-        <a href="history">
+        <Link href="/history">
           <BiHistory
             size={35}
             color="white"
             className="drop-shadow-2xl hover:scale-110 ease-in-out duration-100 cursor-pointer"
           />
-        </a>
+        </Link>
       </div>
     </header>
   );
