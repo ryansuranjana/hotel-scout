@@ -2,9 +2,9 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { BiHistory, BiLogoGithub } from "react-icons/bi";
+import { BiSolidHome, BiLogoGithub } from "react-icons/bi";
 
-const Header = () => {
+const HeaderHistory = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -40,8 +40,8 @@ const Header = () => {
             className="drop-shadow-2xl hover:scale-110 ease-in-out duration-100"
           />
         </a>
-        <Link href="/history">
-          <BiHistory
+        <Link href="/">
+          <BiSolidHome
             size={35}
             color="white"
             className="drop-shadow-2xl hover:scale-110 ease-in-out duration-100 cursor-pointer"
@@ -52,4 +52,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderHistory;
